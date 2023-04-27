@@ -1,20 +1,23 @@
 #include "main.h"
 
 /**
-  * _islower - Entry point
-  * @a: The character to be checked from ASCII table
-  * Return: 1 for lowercase character. 0 for others.
+  * print_alphabet_x10 - Entry point
+  * Description - function that prints 10 times the alphabet, in lowercase
+  * Return: always 0 (sucess)
   */
 
-int _islower(int a)
+void print_alphabet_x10(void)
 {
-	if (a >= 97 && a <= 122)
+	int k = 48;
+	int l;
+
+	while (k <= 57)
 	{
-		return (1);
+		for (l = 97; l <= 122; l++)
+		{
+		_putchar(l);
+		}
+		_putchar('\n');
+		k++;
 	}
-	else
-	{
-		return (0);
-	}
-	_putchar('\n');
 }
